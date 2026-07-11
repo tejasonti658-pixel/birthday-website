@@ -1,0 +1,211 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#ffeef7,#fff8fc);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/* Main Card */
+.container{
+    width:90%;
+    max-width:420px;
+    background:#ffffff;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation:fadeIn 1s;
+}
+
+/* Heading */
+.title{
+    font-size:60px;
+}
+
+.name{
+    color:#ff4081;
+    margin-top:10px;
+    font-size:32px;
+}
+
+/* Paragraph */
+p{
+    margin-top:15px;
+    color:#555;
+    font-size:18px;
+    line-height:1.5;
+}
+
+/* Gift */
+.gift{
+    font-size:90px;
+    cursor:pointer;
+    margin-top:25px;
+    transition:.3s;
+    animation:bounce 1.5s infinite;
+}
+
+.gift:hover{
+    transform:scale(1.1);
+}
+
+/* Button */
+button{
+    padding:14px 28px;
+    margin:15px 10px;
+    border:none;
+    border-radius:30px;
+    background:#ff4081;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff1f6a;
+    transform:scale(1.05);
+}
+
+/* Gallery */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:120px;
+    height:120px;
+    border-radius:18px;
+    object-fit:cover;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* Cake */
+.cake{
+    font-size:90px;
+    animation:zoom 1s infinite alternate;
+}
+
+/* Hug */
+.hug{
+    font-size:90px;
+    animation:hug 1.2s infinite;
+}
+
+/* Secret Letter */
+.secret{
+    background:#fff0f6;
+    padding:20px;
+    border-radius:20px;
+    margin-top:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Floating Hearts */
+.heart{
+    position:fixed;
+    font-size:28px;
+    animation:float 5s linear forwards;
+}
+
+/* Fade Animation */
+.fade{
+    animation:fadeIn 1s;
+}
+
+/* Animations */
+
+@keyframes bounce{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+@keyframes zoom{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.1);
+}
+
+}
+
+@keyframes hug{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes float{
+
+from{
+transform:translateY(0);
+opacity:1;
+}
+
+to{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+
+/* Mobile Responsive */
+
+@media(max-width:480px){
+
+.container{
+width:95
