@@ -63,11 +63,11 @@ function showGallery() {
 
         <div class="gallery">
 
-            <img src="images/image1.jpeg">
+            <img src="images/image1.jpg">
 
-            <img src="images/image2.jpeg">
+            <img src="images/image2.jpg">
 
-            <img src="images/image3.jpeg">
+            <img src="images/image3.jpg">
 
         </div>
 
